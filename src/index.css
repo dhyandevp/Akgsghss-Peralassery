@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors - Deep Institutional Red */
+  --color-primary-50: #FDF2F2;
+  --color-primary-100: #FCE7EB;
+  --color-primary-200: #F8C4CA;
+  --color-primary-300: #F09099;
+  --color-primary-400: #E55C6B;
+  --color-primary-500: #D23246;
+  --color-primary-600: #AC1F2F;
+  --color-primary-700: #881318;
+  /* Main Brand Color */
+  --color-primary-800: #660E12;
+  --color-primary-900: #4D080C;
+  --color-primary-950: #2b0406;
+
+  /* Fonts */
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply font-sans antialiased text-gray-700 bg-white;
+  }
+
+  /* Improved focus visibility for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-600;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-gray-900 tracking-tight;
+  }
+  
+  /* Responsive typography adjustments */
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}

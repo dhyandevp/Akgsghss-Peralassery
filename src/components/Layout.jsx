@@ -1,0 +1,25 @@
+import React, { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+
+export default function Layout() {
+    const { pathname } = useLocation();
+
+    // Scroll to top on route change
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return (
+        <div className="flex flex-col min-h-screen font-sans antialiased text-gray-700 bg-white">
+            <Navbar />
+            <main className="flex-grow pt-[80px]">
+                <Outlet />
+            </main>
+
+            <Footer />
+        </div>
+    );
+}
