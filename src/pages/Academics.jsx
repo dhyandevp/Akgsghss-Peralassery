@@ -16,6 +16,27 @@ export default function Academics() {
 
             <Section>
                 <div className="max-w-4xl mx-auto space-y-16">
+                    {/* Upper Primary */}
+                    <div>
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-700">
+                                <Book size={20} />
+                            </div>
+                            <h2 className="text-2xl font-bold text-gray-900 font-heading">Upper Primary (Class 5-7)</h2>
+                        </div>
+                        <p className="text-gray-600 mb-8 pl-14">
+                            Building a strong academic foundation through interactive learning and skill development.
+                        </p>
+                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 pl-14">
+                            {['Mathematics', 'Basic Science', 'Social Science', 'English', 'Malayalam', 'Hindi', 'IT'].map(sub => (
+                                <div key={sub} className="flex items-center gap-2 text-sm text-gray-700 bg-gray-50 p-3 rounded border border-gray-100">
+                                    <CheckCircle size={14} className="text-primary-600" /> {sub}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <hr className="border-gray-100" />
                     {/* High School */}
                     <div>
                         <div className="flex items-center gap-3 mb-6">
@@ -28,7 +49,7 @@ export default function Academics() {
                             Following the Kerala State Syllabus, we focus on building a strong foundation in core subjects.
                         </p>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 pl-14">
-                            {['Mathematics', 'Basic Science', 'Social Science', 'English', 'Malayalam', 'Hindi', 'IT'].map(sub => (
+                            {['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Social Science', 'English', 'Malayalam', 'Hindi', 'IT'].map(sub => (
                                 <div key={sub} className="flex items-center gap-2 text-sm text-gray-700 bg-gray-50 p-3 rounded border border-gray-100">
                                     <CheckCircle size={14} className="text-primary-600" /> {sub}
                                 </div>

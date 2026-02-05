@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'; ``
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, BookOpen } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -18,6 +18,36 @@ export default function Footer() {
                         <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
                             A premier government institution named after the visionary leader A. K. Gopalan. Dedicated to excellence in education since 1956.
                         </p>
+                        <div className="flex gap-4 pt-2">
+                            <a
+                                href="https://www.instagram.com/akgs_ghss_peralassery/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-pink-500 transition-colors"
+                                aria-label="Follow us on Instagram"
+                            >
+                                <Instagram size={24} />
+                            </a>
+                            <a
+                                href="https://www.facebook.com/people/AKGS-GHSS-Peralassery/61558713118715/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-blue-600 transition-colors"
+                                aria-label="Follow us on Facebook"
+                            >
+                                <Facebook size={24} />
+                            </a>
+                            <a
+                                href="https://schoolwiki.in/%E0%B4%8E.%E0%B4%95%E0%B5%86.%E0%B4%9C%E0%B4%BF.%E0%B4%8E%E0%B4%B8%E0%B5%8D_%E0%B4%9C%E0%B4%BF.%E0%B4%8E%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B5%8D_%E0%B4%8E%E0%B4%B8%E0%B5%8D_%E0%B4%8E%E0%B4%B8%E0%B5%8D_%E0%B4%AA%E0%B5%86%E0%B4%B0%E0%B4%B3%E0%B4%B6%E0%B5%8D%E0%B4%B6%E0%B5%87%E0%B4%B0%E0%B4%BF"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-green-600 transition-colors"
+                                aria-label="View on SchoolWiki"
+                                title="SchoolWiki"
+                            >
+                                <BookOpen size={24} />
+                            </a>
+                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -58,14 +88,17 @@ export default function Footer() {
                         <span className="hidden md:inline text-gray-700">|</span>
                         <p className="flex items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
                             <span className="text-gray-500 font-bold text-[10px] uppercase tracking-widest border border-gray-700 px-2 py-0.5 rounded-full">
-                                Made with love by Dhyandev P
+                                <a href="https://madewithloveinindia.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                                    Made with <span aria-label="Love" style={{ color: '#f43f5e' }}>&hearts;</span> in India
+                                </a>
+                                {' '}by Dhyandev P
                             </span>
                         </p>
 
                     </div>
                     <div className="flex gap-4">
-                        <span className="hover:text-gray-300 cursor-pointer">Privacy</span>
-                        <span className="hover:text-gray-300 cursor-pointer">Terms</span>
+                        <Link to="/privacy" className="hover:text-gray-300 cursor-pointer">Privacy</Link>
+                        <Link to="/terms" className="hover:text-gray-300 cursor-pointer">Terms</Link>
                     </div>
                 </div>
             </div>

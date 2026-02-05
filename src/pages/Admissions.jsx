@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/ui/Section';
 import PageHeader from '../components/PageHeader';
-import { Download, CheckSquare } from 'lucide-react';
+import { CheckSquare } from 'lucide-react';
 
 
 export default function Admissions() {
@@ -18,9 +18,9 @@ export default function Admissions() {
 
                     {/* Notice */}
                     <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg mb-12">
-                        <h3 className="font-bold text-lg text-primary-900 mb-2">Admissions Open for 2026-27</h3>
+                        <h3 className="font-bold text-lg text-primary-900 mb-2">Admissions Open for {new Date().getFullYear()}-{(new Date().getFullYear() + 1).toString().slice(-2)}</h3>
                         <p className="text-primary-800 text-sm">
-                            Applications for Standard 8 and Plus One are now being accepted. Please submit before May 31, 2026.
+                            Applications for Standard 5 to 7, Standard 8, and Plus One are now being accepted. Please submit before May 31, {new Date().getFullYear()}.
                         </p>
                     </div>
 
@@ -49,12 +49,7 @@ export default function Admissions() {
                                 ))}
                             </ul>
 
-                            <div className="mt-8">
-                                <button className="w-full bg-gray-900 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors">
-                                    <Download size={18} />
-                                    Download Prospectus
-                                </button>
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -101,10 +101,10 @@ export default function Home() {
                 <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-primary-100">
                     <GraduationCap className="w-12 h-12 text-primary-700 mx-auto mb-6" />
                     <h2 className="text-3xl font-bold text-gray-900 font-heading mb-4">
-                        Admissions Open for 2026-27
+                        Admissions Open for {new Date().getFullYear()}-{(new Date().getFullYear() + 1).toString().slice(-2)}
                     </h2>
                     <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-                        Secure your child's future with quality government education. Applications are now being accepted for Class 8 and Plus One.
+                        Secure your child's future with quality government education. Applications are now being accepted for Class 5 to 7, Class 8, and Plus One.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link to="/admissions" className="bg-primary-700 text-white px-8 py-3 rounded-lg font-bold hover:bg-primary-800 transition-colors shadow-sm">

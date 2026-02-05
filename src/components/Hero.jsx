@@ -12,10 +12,10 @@ export default function Hero() {
                 <img
                     src={heroImage}
                     alt="School Building"
-                    className="w-full h-full object-cover opacity-30"
+                    className="w-full h-full object-cover opacity-40"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 to-primary-800/70" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-800/60" />
             </div>
 
             {/* Content */}

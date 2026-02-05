@@ -50,6 +50,20 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+
+                {/* Video Section */}
+                {/* Video Section */}
+                <div className="mt-16 max-w-4xl mx-auto">
+                    <div className="rounded-2xl overflow-hidden shadow-xl aspect-video border-4 border-white ring-1 ring-gray-200">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/-JybKNprjx4"
+                            title="AKGSGHSS Peralassery"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
             </Section>
         </>
     );

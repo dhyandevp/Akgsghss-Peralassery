@@ -11,6 +11,8 @@ const Facilities = lazy(() => import('./pages/Facilities'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Admissions = lazy(() => import('./pages/Admissions'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
 
 // Simple loading spinner component
 const PageLoader = () => (
@@ -36,6 +38,8 @@ function App() {
             <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<Contact />} />
             <Route path="admissions" element={<Admissions />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
           </Route>
         </Routes>
       </Suspense>
