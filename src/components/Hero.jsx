@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import heroImage from '../assets/images/hero.jpg';
+import heroImage from '../assets/images/school images/13062school.jpeg';
 
 
 export default function Hero() {

@@ -9,7 +9,7 @@ import ProgramCard from '../components/ProgramCard';
 import { BookOpen, Users, Trophy, GraduationCap, ArrowRight, Star } from 'lucide-react';
 
 import { Link } from 'react-router-dom';
-import campusLifeImage from '../assets/images/campus-life.jpg';
+import campusLifeImage from '../assets/images/school images/campus-event.png';
 
 
 export default function Home() {
@@ -53,7 +53,7 @@ export default function Home() {
             {/* Stats Bar */}
             <div className="bg-primary-900 text-white py-16">
                 <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-white/10 md:divide-x">
-                    <StatItem number="2000+" label="Students" />
+                    <StatItem number="3000+" label="Students" />
                     <StatItem number="100+" label="Faculty Members" />
                     <StatItem number="1956" label="Established" />
                     <StatItem number="100%" label="Pass Percentage" />
